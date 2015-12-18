@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Radio buttons and Checkboxes</title>
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Custom styled checkboxes and radio buttons">
+  <meta name="keywords" content="checkbox, radio button, css, custom checkbox">
+  <meta name="author" content="Neil Kim Gardose, @nkpgardose">
+  <!-- links for radio and checkboxes-->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href="css/radio-check.css" rel="stylesheet">
+  <style>
+    html, body {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <p><strong>Default</strong></p>
+  <hr>
+  <fieldset>
+    <legend>Choose Your Favorite</legend>
+    <input type="radio" name="pokemon" value="Red" id="pokemonRed" required><label for="pokemonRed">Red</label>
+    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+    <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
+  </fieldset>
+  <fieldset>
+    <legend>Check these out</legend>
+    <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+    <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+    <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+  </fieldset>
+  <p><strong>Styled</strong></p>
+  <fieldset>
+    <legend>Choose Your Favorite</legend>
+    <input class="input-radio" type="radio" name="pokemon" value="Red" id="pokemonGreen" required><label for="pokemonGreen">Green</label>
+    <input class="input-radio" type="radio" name="pokemon" value="Blue" id="pokemonBlack"><label for="pokemonBlack">Black</label>
+    <input class="input-radio" type="radio" name="pokemon" value="Yellow" id="pokemonGold"><label for="pokemonGold">Gold</label>
+  </fieldset>
+  <fieldset>
+    <legend>Check these out</legend>
+    <input class="input-check" id="checkbox4" type="checkbox"><label for="checkbox4">Checkbox 4</label>
+    <input class="input-check" id="checkbox5" type="checkbox"><label for="checkbox5">Checkbox 5</label>
+    <input class="input-check" id="checkbox6" type="checkbox"><label for="checkbox6">Checkbox 6</label>
+  </fieldset>
+</body>
+</html>

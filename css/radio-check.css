@@ -1,0 +1,62 @@
+.input-radio,
+.input-check {
+  display: none;
+}
+
+/* This will affect box model of radio and checkbox */
+.input-radio + label:before,
+.input-check + label:before,
+[type="checkbox"],
+[type="radio"] {
+  margin: 0 .8rem;
+}
+
+.input-radio + label,
+.input-check + label {
+  position: relative;
+}
+
+.input-radio + label:before,
+.input-check + label:before {
+  display: inline-block;
+  width: 1.675rem;
+  height: 1.675rem;
+  padding: 0;
+  content: '';
+  line-height: 1.650rem;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.input-radio + label:active:before,
+.input-check + label:active:before {
+  background: rgba(64, 120, 192, .3);
+  color: rgb(255, 255, 255);
+}
+
+.input-check + label:before {
+  border: solid 1px rgba(36, 36, 36, .5);
+  box-shadow: inset 0 0 2px rgba(36, 36, 36, .5);
+}
+
+.input-check:checked + label:before {
+  font-size: .9rem;
+  content: '\2713';
+  background-color: rgba(64,120,192, .1);
+  color: rgb(64, 120, 192);
+}
+
+.input-radio + label:before {
+  border: solid 1px rgba(36, 36, 36, .5);
+  border-radius: 50%;
+  box-shadow: inset 0 0 2px rgba(36, 36, 36, .5);
+}
+
+.input-radio:checked + label:before {
+  font-size: 1.78125rem;
+  line-height: 1.77rem;
+  text-indent: 0;
+  content: '•';
+  background-color: rgba(64,120,192, .1);
+  color: rgb(64, 120, 192);
+}
