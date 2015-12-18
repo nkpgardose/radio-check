@@ -1,4 +1,4 @@
-# Radio Button and Checkbox with style
+# Radio button and checkbox with style
 
 > Replacement for default radio button and checkbox style
 
@@ -22,7 +22,7 @@ $ open index.html
   <label for="pokemonGold">Gold</label>
 </fieldset>
 
-<!-- Checkbox, user `input-check` class -->
+<!-- Checkbox, use `input-check` class -->
 <fieldset>
   <legend>Check these out</legend>
   <input class="input-check" id="checkbox4" type="checkbox">
